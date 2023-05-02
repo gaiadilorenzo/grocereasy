@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "project"
+version = "0.1.0"
+description = ""
+authors = ["Gaia Di Lorenzo <gaia.dilorenzo01@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "~3.10.6"
+
+beautifulsoup4 = "^4.11.1"
+colorlog = "^6.7.0"
+cygrpc = "^1.0.4"
+google-cloud-bigquery = "^3.3.2"
+google-cloud-logging = "^3.5.0"
+google-cloud-pubsub = "^2.13.6"
+grpcio = "^1.53.0"
+lxml = "^4.9.2"
+ortools = "^9.6.2534"
+pandas = "^1.4.3"
+pydantic = "^1.9.2"
+regex = "^2022.9.13"
+requests = "^2.28.1"
+webdriver-manager = "^3.8.6"
+selenium = "^4.8.0"
+tabulate = "^0.9.0"
+tdqm = "^0.0.1"
+tenacity = "^8.2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+
+black = "^22.6.0"
+db-dtypes = "^1.0.3"
+flake8 = "^6.0.0"
+ipdb = "^0.13.11"
+isort = "^5.12.0"
+mypy = "^0.991"
+pandas-stubs = "^1.5.2"
+types-urllib3 = "^1.26.25"
+types-tabulate = "^0.9.0"
+types-tqdm = "^4.64.7"
+vcrpy = "^4.2.1"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
